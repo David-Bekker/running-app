@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="credits"
+        android:id="@+id/credits"/>
+    <item android:title="credits2"
+        android:id="@+id/credits2"/>
+    <item android:title="back"
+        android:id="@+id/back"/>
+    <item android:title="exit"
+        android:id="@+id/exit"/>
+
+</menu>

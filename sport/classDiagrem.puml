@@ -1,0 +1,73 @@
+@startuml
+class classes.Guest {
+# String username
+# ArrayList<Session> ses
+# int lvl
+# int xp
++ <<Create>> Guest(double,double,String,ArrayList<Session>,int,int)
++ String getUsername()
++ void setUsername(String)
++ ArrayList<Session> getSes()
++ void setSes(ArrayList<Session>)
++ int getLvl()
++ void setLvl(int)
++ int getXp()
++ void setXp(int)
++ String toString()
+}
+
+class classes.Point {
+# double latitude
+# double longitude
++ <<Create>> Point(double,double)
++ <<Create>> Point()
++ double getLatitude()
++ void setLatitude(double)
++ double getLongitude()
++ void setLongitude(double)
++ String toString()
+}
+class classes.Data {
+# double step_size
+# double weight
++ <<Create>> Data(double,double)
++ double getStep_size()
++ void setStep_size(double)
++ double getWeight()
++ void setWeight(double)
++ String toString()
+}
+
+class classes.Session {
+- double time
+- double length
+- String date
++ <<Create>> Session(double,double,double,double,String)
++ double getTime()
++ void setTime(double)
++ double getLength()
++ void setLength(double)
++ String getDate()
++ void setDate(String)
++ String toString()
+}
+
+
+class classes.User {
+- String password
+- String phone
++ <<Create>> User(double,double,String,ArrayList<Session>,int,int,String,String)
++ String getPassword()
++ void setPassword(String)
++ String getPhone()
++ void setPhone(String)
++ String toString()
+}
+
+
+
+classes.Data <|-- classes.Guest
+classes.Point <|-- classes.Session
+classes.Guest <|-- classes.User
+
+@enduml

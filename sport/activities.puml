@@ -1,0 +1,99 @@
+@startuml
+class com.example.sportactivity.login {
+~ Switch remember
+~ Button login
+~ ImageButton forgot
+~ EditText user_name
+~ TextInputLayout textInputLayout
+~ String flag
+~ SharedPreferences sharedPref
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
++ void onClick(View)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+~ void save()
++ void openForgotDialog()
++ Boolean true_password(String)
+}
+class com.example.sportactivity.Main {
+~ Button btn
+~ ProgressBar[] progressBar
+~ TextView[] textViews
+~ boolean flag
+~ String user_name
+~ String sign
+~ TextView name
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
++ void onClick(View)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+}
+class com.example.sportactivity.map_activity {
+- GoogleMap mMap
+- LocationListener locationListener
+- LocationManager locationManager
+- {static} double EARTH_RADIUS_KM
+- int MIN_TIME
+- int MIN_DISTANCE
+- LatLng latLng
+- ArrayList<Point> locations
++ {static} Button[] btn
++ {static} TextView[] txt
+~ Boolean flag
+~ String user_name
+~ String mode
+~ double distance
+~ int steps
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
+~ void onClick(View)
++ void onMapReady(GoogleMap)
++ {static} Bitmap rotateBitmap(Context,int,float)
++ void getCurrentLocation()
++ {static} double haversineFormulaForDistance(double,double,double,double)
+- {static} double haversin(double)
++ void calculation(Location,Location)
+}
+class com.example.sportactivity.MainActivity {
+~ Button[] btn
+# void onCreate(Bundle)
++ void onClick(View)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+~ String randomName()
+}
+class com.example.sportactivity.settings {
+~ Button account_setting
+~ Button save
+~ EditText weight
+~ EditText step_len
+~ Boolean flag
+~ String username
+~ TextView name
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
+~ void onClick(View)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ void openAccountDialog()
+}
+class com.example.sportactivity.statistics {
+~ TextView[] txt
+~ String username
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+}
+class com.example.sportactivity.LeaderBoard {
+~ String username
+~ FirebaseHelper firebaseHelper
+# void onCreate(Bundle)
++ {static} List<Data> sortDataList(List<Data>)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
+}
+
+@enduml

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="אודות האפליקציה"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שם: sport activity"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תיאור אפליקציה:\n אפליקציה עבור פעילויות ספורט\n של ריצה ורכיבה על אופניים\n "
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="שימוש: בפתיחת האאפליקציה נכנסים למסך הראשי \nניתן להירשם,להיכנס בתור משתמש ובתור אורח.\n אם זאת התחברות ראשונה אז יהיה על המשתמש להכניס\n משקל בק'ג ואורך צעד בס'מ לאחר מכן יהיה ניתן ללכת למסך \nהראשי ושם יהיה 3 מדדים : רמה, צעדדים שנעשו באותו יום\n לאחר כל פעילות מספר הצעדים יהיו מומר לנקודות \n ניסיון ולאחר מספר מסוים של נקודות \n עולים רמה ומספר הנקודות מתאפס \nוקלוריות שנשרפו באותו יום בנוסף \nקיים כפתור להתחלת פעילות.\nניתן לעבור בין המסכים השונים: תוצאות מסך הרשמה, הגדרות, \nמסך התחלתי ומסך סטטיסטיקות "
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDE: android studio"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Release: Android 9(Pie)"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="leaderboard"
+        android:id="@+id/leaderboard"/>
+    <item android:title="statistics"
+        android:id="@+id/statistics"/>
+    <item android:title="credits"
+        android:id="@+id/credits"/>
+    <item android:title="credits2"
+        android:id="@+id/credits2"/>
+    <item android:title="settings"
+        android:id="@+id/settings"
+        android:visible="true"/>
+    <item android:title="back"
+        android:id="@+id/back"/>
+    <item android:title="exit"
+        android:id="@+id/exit"/>
+</menu>

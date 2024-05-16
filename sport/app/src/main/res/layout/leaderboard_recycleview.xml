@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0F63C3">
+
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="#rank"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/godofwar"/>
+
+    <TextView
+        android:id="@+id/rankerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="name"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/lvl"
+        app:layout_constraintStart_toEndOf="@+id/rank"
+        app:layout_constraintTop_toTopOf="@+id/rank"
+        android:fontFamily="@font/godofwar"/>
+
+    <TextView
+        android:id="@+id/lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="level"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/reankerSteps"
+        app:layout_constraintTop_toTopOf="@+id/rankerName"
+        android:fontFamily="@font/godofwar"/>
+
+    <TextView
+        android:id="@+id/reankerSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/godofwar"
+        android:text="steps"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/lvl"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/rank"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/gold"
+        tools:layout_editor_absoluteY="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
